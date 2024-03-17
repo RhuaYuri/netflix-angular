@@ -15,6 +15,8 @@ import { WatchPlayerControlsComponent } from './components/watch-player/watch-pl
 import { MediaSliderItemComponent } from './components/media-slider/media-slider-item/media-slider-item.component';
 import { MediaSliderDetailsComponent } from './components/media-slider/media-slider-details/media-slider-details.component';
 import { AccountPageComponent } from './pages/account-page/account-page.component';
+import { CadastroComponent } from './pages/cadastro/cadastro.component';
+import { CustomInputComponent } from './components/input-genero/input-genero.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import { AccountPageComponent } from './pages/account-page/account-page.componen
     MediaSliderItemComponent,
     MediaSliderDetailsComponent,
     AccountPageComponent,
+    CadastroComponent,
+    CustomInputComponent
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, FormsModule],
   providers: [],

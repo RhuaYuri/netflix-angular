@@ -5,6 +5,7 @@ import { MediaBrowserPageComponent } from './pages/media-browser-page/media-brow
 import { AuthGuard } from './core/guards/auth.guard';
 import { WatchPlayerComponent } from './components/watch-player/watch-player.component';
 import { AccountPageComponent } from './pages/account-page/account-page.component';
+import { CadastroComponent } from './pages/cadastro/cadastro.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,10 @@ const routes: Routes = [
     path: 'account',
     component: AccountPageComponent,
     canActivate: [AuthGuard],
+  },
+  {
+    path: 'cadastro',
+    component: CadastroComponent,
   },
   { path: '**', redirectTo: '/', canActivate: [AuthGuard] },
 ];

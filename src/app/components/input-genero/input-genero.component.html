@@ -1,0 +1,12 @@
+<div class="custom-input">
+    <div *ngFor="let option of selectedOptions" class="selected-option">
+        <span>{{ option }}</span>
+        <button (click)="removeOption(option)">x</button>
+    </div>
+    <div class="custom-select-wrapper">
+        <select (change)="onSelectionChange($event)">
+            <option disabled selected>Selecione os gêneros do filme</option> 
+            <option *ngFor="let option of availableOptions" [value]="option">{{ option }}</option>
+        </select>
+    </div>
+</div>

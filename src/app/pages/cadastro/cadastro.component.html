@@ -1,0 +1,210 @@
+<div class="media-browser">
+  <div class="media-browser__container">
+    <div class="media-browser__lists">
+      <div class="main-content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-header card-header-danger">
+                  <h4 class="card-title ">Simple Table</h4>
+                  <p class="card-category"> Here is a subtitle for this table</p>
+                </div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <div class="container-fluid">
+                      <div class="row center">
+                        <div class="col-md-6">
+                          <form (ngSubmit)="onSubmit()" [formGroup]="form" class="login-form__form">
+                            <input class="login-form__input" 
+                            id="email" 
+                            formControlName="email" 
+                            type="email"
+                             placeholder="Nome do Filme" autocomplete="off" autofocus />
+                            <span class="login-form__error" *ngIf="email.invalid && email.dirty">
+                              Please enter a valid email</span>
+                            <input class="login-form__input" 
+                              id="password" 
+                              formControlName="text" 
+                              type="password"
+                              placeholder="Sinopse" />
+                              
+                              
+                              <app-input-genero></app-input-genero>
+                              
+                              
+                              <span class="login-form__error" *ngIf="email.invalid && email.dirty">
+                                Please enter a valid email</span>
+                            <span class="login-form__error" *ngIf="password.invalid && password.dirty">Your password must
+                              contain between 6 and 60 characters.</span>
+                            <button class="login-form__button" type="submit">Sign In</button>
+                            <div class="login-form__footer">
+                              <input type="checkbox" name="remember-check" id="remember-check"
+                                class="login-form__check" />
+                              <label for="remember-check" class="login-form__check-label">Remember me</label>
+                              <a class="login-form__help">Need help?</a>
+                            </div>
+                          </form>
+  
+  
+                      </div>
+                      <div class="col-md-6 ">
+                        <button class="login-form__button">
+                          <img src="assets/img/icones/add_image.png" alt="" srcset="">
+
+                        </button>
+                      
+  
+  
+                    </div>
+
+                      </div>
+                    </div>
+
+                  
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="card card-plain">
+                <div class="card-header card-header-danger">
+                  <h4 class="card-title mt-0"> Table on Plain Background</h4>
+                  <p class="card-category"> Here is a subtitle for this table</p>
+                </div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table table-hover">
+                      <thead class="">
+                        <th>
+                          ID
+                        </th>
+                        <th>
+                          Name
+                        </th>
+                        <th>
+                          Country
+                        </th>
+                        <th>
+                          City
+                        </th>
+                        <th>
+                          Salary
+                        </th>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            1
+                          </td>
+                          <td>
+                            Dakota Rice
+                          </td>
+                          <td>
+                            Niger
+                          </td>
+                          <td>
+                            Oud-Turnhout
+                          </td>
+                          <td>
+                            $36,738
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            2
+                          </td>
+                          <td>
+                            Minerva Hooper
+                          </td>
+                          <td>
+                            Curaçao
+                          </td>
+                          <td>
+                            Sinaai-Waas
+                          </td>
+                          <td>
+                            $23,789
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            3
+                          </td>
+                          <td>
+                            Sage Rodriguez
+                          </td>
+                          <td>
+                            Netherlands
+                          </td>
+                          <td>
+                            Baileux
+                          </td>
+                          <td>
+                            $56,142
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            4
+                          </td>
+                          <td>
+                            Philip Chaney
+                          </td>
+                          <td>
+                            Korea, South
+                          </td>
+                          <td>
+                            Overland Park
+                          </td>
+                          <td>
+                            $38,735
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            5
+                          </td>
+                          <td>
+                            Doris Greene
+                          </td>
+                          <td>
+                            Malawi
+                          </td>
+                          <td>
+                            Feldkirchen in Kärnten
+                          </td>
+                          <td>
+                            $63,542
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            6
+                          </td>
+                          <td>
+                            Mason Porter
+                          </td>
+                          <td>
+                            Chile
+                          </td>
+                          <td>
+                            Gloucester
+                          </td>
+                          <td>
+                            $78,615
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
